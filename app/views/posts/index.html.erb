@@ -9,14 +9,13 @@
             <div>
                 <%= link_to post.title, post_path(post) %>
                 <% if post.comments.any? %>
-                    <%# <span class="badge badge-primary badge-pill"><%= post.comments.size </span> %>
-                    <span class="badge badge-primary badge-pill">1</span>
+                    <span class="badge badge-primary badge-pill"><%= post.comments.size %></span> %>
                 <% end %>    
                 <span class="text-secondary">
                     <%= l(post.created_at, format: :long) %>
-                </span>
+                </span> 
             </div>
-            <div class="dropdown-menu">
+            <div class="dropdown">
                 <button class="btn btn-sm btn-link dropdown-toggle p-0" data-toggle="dropdown" >
                 </button>
                 <div class="dropdown-menu">
