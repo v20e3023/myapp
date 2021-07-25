@@ -20,13 +20,6 @@ ActiveRecord::Schema.define(version: 20210718055501) do
     t.index ["post_id"], name: "index_comments_on_post_id"
   end
 
-  create_table "memos", force: :cascade do |t|
-    t.string   "title"
-    t.text     "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
