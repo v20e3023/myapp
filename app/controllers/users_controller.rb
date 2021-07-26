@@ -1,13 +1,5 @@
 class UsersController < ApplicationController
     
-    def index
-        @user = User.all.order(created_at: 'desc')
-    end
-    
-    def _signin
-        @user = User.find(params[:user_id])
-    end
-    
     def new
         @user = User.new
     end
